@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="VtigerAllModule_Script.LearnDataProvider">
+      <class name="VtigerAllModule_Script.CreateContact_Test">
         <methods>
-          <include name="TakingData"/>
+          <include name="createContact_Test"/>
+          <include name="selectOrgInContact_Test"/>
+          <include name="CloseDBConnConfigAS"/>
+          <include name="LogoutconfigAM"/>
+          <include name="CloseBrowserConfigAC"/>
+          <include name="DataBaseConnconfigBS"/>
+          <include name="LoginconfigBM"/>
+          <include name="contactWithSupportDate_Test"/>
+          <include name="LaunchBrowserconfigBC"/>
         </methods>
-      </class> <!-- VtigerAllModule_Script.LearnDataProvider -->
+      </class> <!-- VtigerAllModule_Script.CreateContact_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
