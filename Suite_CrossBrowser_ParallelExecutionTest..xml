@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+	<test thread-count="2" name="Test-chrome">
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="VtigerAllModule_Script.CreateContact_Test" />
+			<class name="VtigerAllModule_Script.CreateOrganization_Test" />
+			<class name="VtigerAllModule_Script.CreateProduct_Test" />
+			<class name="VtigerAllModule_Script.CreateOpportunities_Test" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="2" name="Test-Edge">
+		<parameter name="Browser" value="Edge"></parameter>
+		<classes>
+			<class name="VtigerAllModule_Script.CreateContact_Test" />
+			<class name="VtigerAllModule_Script.CreateOrganization_Test" />
+			<class name="VtigerAllModule_Script.CreateProduct_Test" />
+			<class name="VtigerAllModule_Script.CreateOpportunities_Test" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
