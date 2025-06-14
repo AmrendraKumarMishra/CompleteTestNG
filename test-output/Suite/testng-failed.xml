@@ -2,54 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTesting"/>
+        <include name="RegressionTesting"/>
+      </run>
+    </groups>
     <classes>
-      <class name="VtigerAllModule_Script.CreateProduct_Test">
-        <methods>
-          <include name="createProductWithSalesStartDate_Test"/>
-          <include name="createProduct_Test"/>
-          <include name="LogoutconfigAM"/>
-          <include name="CloseDBConnConfigAS"/>
-          <include name="CloseBrowserConfigAC"/>
-          <include name="LoginconfigBM"/>
-          <include name="DataBaseConnconfigBS"/>
-          <include name="LaunchBrowserconfigBC"/>
-        </methods>
-      </class> <!-- VtigerAllModule_Script.CreateProduct_Test -->
-      <class name="VtigerAllModule_Script.CreateOpportunities_Test">
-        <methods>
-          <include name="LogoutconfigAM"/>
-          <include name="CloseDBConnConfigAS"/>
-          <include name="CloseBrowserConfigAC"/>
-          <include name="createOpportunitiesWithContact_Test"/>
-          <include name="LoginconfigBM"/>
-          <include name="DataBaseConnconfigBS"/>
-          <include name="createOpportunitiesWithOrgName_Test"/>
-          <include name="LaunchBrowserconfigBC"/>
-        </methods>
-      </class> <!-- VtigerAllModule_Script.CreateOpportunities_Test -->
-      <class name="VtigerAllModule_Script.CreateOrganization_Test">
-        <methods>
-          <include name="orgWithNumber_Test"/>
-          <include name="orgainzation_Test"/>
-          <include name="LogoutconfigAM"/>
-          <include name="CloseDBConnConfigAS"/>
-          <include name="CloseBrowserConfigAC"/>
-          <include name="orgWith_IndustryAdType_Test"/>
-          <include name="LoginconfigBM"/>
-          <include name="DataBaseConnconfigBS"/>
-          <include name="LaunchBrowserconfigBC"/>
-        </methods>
-      </class> <!-- VtigerAllModule_Script.CreateOrganization_Test -->
       <class name="VtigerAllModule_Script.CreateContact_Test">
         <methods>
-          <include name="createContact_Test"/>
           <include name="selectOrgInContact_Test"/>
-          <include name="LogoutconfigAM"/>
           <include name="CloseDBConnConfigAS"/>
+          <include name="LogoutconfigAM"/>
           <include name="CloseBrowserConfigAC"/>
-          <include name="LoginconfigBM"/>
           <include name="DataBaseConnconfigBS"/>
-          <include name="contactWithSupportDate_Test"/>
+          <include name="LoginconfigBM"/>
           <include name="LaunchBrowserconfigBC"/>
         </methods>
       </class> <!-- VtigerAllModule_Script.CreateContact_Test -->
