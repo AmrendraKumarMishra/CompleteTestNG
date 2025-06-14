@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="SmokeTesting"/>
-        <include name="RegressionTesting"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="VtigerAllModule_Script.CreateContact_Test">
+      <class name="VtigerAllModule_Script.CreateOrganization_Test">
         <methods>
-          <include name="selectOrgInContact_Test"/>
+          <include name="orgainzation_Test"/>
           <include name="CloseDBConnConfigAS"/>
           <include name="LogoutconfigAM"/>
           <include name="CloseBrowserConfigAC"/>
+          <include name="orgWith_IndustryAdType_Test"/>
           <include name="DataBaseConnconfigBS"/>
           <include name="LoginconfigBM"/>
           <include name="LaunchBrowserconfigBC"/>
         </methods>
-      </class> <!-- VtigerAllModule_Script.CreateContact_Test -->
+      </class> <!-- VtigerAllModule_Script.CreateOrganization_Test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
